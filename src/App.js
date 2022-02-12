@@ -28,7 +28,7 @@ class App extends react.Component {
     for(var n in data.conversion_rates){
     if(n===w){
     tar=data.conversion_rates[n];
-   this.setState({val:tar*base})
+   this.setState({val:Math.ceil(tar*base)})
     }
     }
     }
